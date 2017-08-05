@@ -5,6 +5,10 @@
   "scripts": {
     "install": [
       {
+        "tool": "js",
+        "file": "install"
+      },
+      {
         "tool": "cmake",
         "file": "install"
       }
