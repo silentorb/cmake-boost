@@ -1,6 +1,6 @@
 
 get_filename_component(PARENT_DIR "${CMAKE_CURRENT_LIST_DIR}" DIRECTORY)
-include(${PARENT_DIR}/config.cmake)
+set(BOOST_PATH ${PARENT_DIR}/boost)
 
 # Get compiler-specific boost path
 if (GCC OR MINGW)
