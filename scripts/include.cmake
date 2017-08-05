@@ -17,6 +17,7 @@ macro(include_boost)
   include_directories(
     ${BOOST_PATH}
   )
+  add_definitions(-DBOOST_ALL_NO_LIB)
 endmacro()
 
 macro(add_boost_library_path name)
@@ -27,9 +28,5 @@ macro(add_boost_library_path name)
   else ()
     set(extension "a")
   endif ()
-#    message("${boost_toolset}")
-#  message("BOOST_SUBDIRECTORY ${BOOST_SUBDIRECTORY}")
-#  message(FATAL_ERROR "Stopping.")
-    message("name ${name}")
   add_external_library("${BOOST_SUBDIRECTORY}/debug/link-static/${additional_dir}libboost_${name}.${extension}")
 endmacro()
