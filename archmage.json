@@ -3,6 +3,11 @@
   "version": "1.0",
   "url": "git@github.com:silentorb/cmake-googletest.git",
   "scripts": {
-    "install": "cmake"
+    "install": [
+      {
+        "tool": "cmake",
+        "file": "install"
+      }
+    ]
   }
 }
