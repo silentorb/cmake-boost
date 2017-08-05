@@ -1,5 +1,5 @@
 
-get_filename_component(PARENT_DIR "../scripts" DIRECTORY)
+get_filename_component(PARENT_DIR "${CMAKE_CURRENT_LIST_DIR}" DIRECTORY)
 set(BOOST_PATH ${PARENT_DIR}/boost)
 
 # Get compiler-specific boost path
